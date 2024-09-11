@@ -5,10 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> JY의 페이지 </title>
             <style>
-                body {background-color: #D3D3D6;}
-            </style>
+                h2 { color:#5c5c5c;}
+                *{box-sizing:border-box; }
+                #menubar {background: #5c5c5c; margin-bottom: 50px; padding: 0 20px;}
+                #menubar ul {display:flex; justify-content: space-between; padding:0; width: 100%;}
+                #menubar ul li { list-style-type: none; }
+                #menubar ul li a {color: white; text-decoration: none;  font-size: 30px;}
+                #menubar ul li a:hover{color:black;}
+                h3 {color: #5c5c5c; font-size: 20px;}
+                body {background-color: #D3D3D6; padding:0 50px 0 50px; }
+                .first-image{position : relative;}
+                .first-image img {background-size: cover; width:100%; height: 500px; display: block;}
+                .WELCOME-text {position: absolute; top:50%; left:50%; text-align: center;
+                     font-size: 3vw; transform: translate(-50%, -50%); color: white;}
+                .info-text{text-align: center; font-size: 40px; color: #5c5c5c;}
+                .boxes {display: flex; justify-content: space-between;}
+                .second-image, .third-image {width:45%; position:relative;}
+                .second-image img, .third-image img{background-size:cover; width: 100%; display: block;}
+                .email-text{position:absolute; text-align:center; font-size: 2vw; top:50%; left:50%; color: black;
+                    transform: translate(-50%, -50%);}
+                .sns-text{position:absolute; text-align:center; font-size: 2vw; top:50%; left:50%; color: black;
+                    transform: translate(-50%, -50%);}
+            </style> 
     </head>
+
+<!-- 컨트롤 + / 주석 -->
+<!--  %부모 너비 기준 % 적용  -->
+  
     <body>
-        <h3>JY's page </h3>
+        <h2>JY's page </h2>
+        <nav id = "menubar">
+            <ul>
+                <li><a href="https://juyeol97.github.io/WebPractice/">home</a></li>
+                <li><a>menu1</a></li>
+                <li><a>menu2</a></li>
+                <li><a>FAQ</a></li>
+           
+            </ul>
+        </nav>
+        <div class="first-image">
+            <img src="../WELCOME.png">
+            <div class="WELCOME-text">
+                <br>
+                <br>
+                <p><b>WELCOME</b><br>방문을 환영합니다!</p>
+            </div>
+        </div>
+                            <br><br><br><br><br>
+        <div class="info-text"><b>info-text</b></div>
+                            <br><br><br><br><br>
+        <div class="boxes">                     
+            <div class="second-image">
+                <img src="../box.png">
+                <div class="email-text">
+                    <p><b>e-mail</b></p>
+                    <p>wnduf0923@naver.com</p>
+                            <br>
+                    <p><b>address</b></p>
+                    <p>Ganghwa - Incheon</p>
+                </div>
+            </div>
+            <div class="third-image">
+                <img src="../box.png">
+                <div class="sns-text">
+                <p><b>instagram</b></p>
+                <p> j__0_9</p>
+                <a href="https://www.instagram.com/j__0_9/?hl=ko">
+                    <img class="insta-link" src="../insta.png"></div>
+                </a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
